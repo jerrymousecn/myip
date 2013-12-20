@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="myip.exe" version="1.0.0.0" publicKeyToken="e0f4699f4a33983b" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="myip" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="myip.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet class="System.Security.PermissionSet" version="1" ID="Custom" SameSite="site" Unrestricted="true" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel node will disable file and registry virtualization.
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="myip.exe" size="10240">
+      <assemblyIdentity name="myip" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>STovJv1JOunbN1ckOzfoPcSFH5c=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="myip.exe.config" size="157">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>60+p9NXC1fxypc5g3dMH4EOGocU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of all Windows versions that this application is designed to work with. 
+      Windows will automatically select the most compatible environment.-->
+      <!-- If your application is designed to work with Windows Vista, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 7, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}"/>-->
+      <!-- If your application is designed to work with Windows 8, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}"></supportedOS>-->
+      <!-- If your application is designed to work with Windows 8.1, uncomment the following supportedOS node-->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}"/>-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=idea-PC-jerry\beibei" issuerKeyHash="aa4d37af0ade826ee5587e9b3ada87aaf2a29889" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>kbZl0gGJ6nMD4+xwfCh4VmKDQtk=</DigestValue></Reference></SignedInfo><SignatureValue>xCiMGkL7xXxm8mOaxCQHeLggV0Rby8snLIHIunzKvMzZw+VPul9fnWUkKijjNuuN9TLzCYlRidKq1GhaF7H6X0oce20AgIxPDKflQ0LYD1OIKfbdvsVg+pn271pUHzNgbO3UG4PBatWYJR5LkU9VQBGmb0hpFA3mnBNwrJpSoMo=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>zHhdztJmuBIDiueDZARlR45dEuuVJhsbxlYV2s+jOyyTcjlE8ALFacBBTTmftWNYppiBJUAVyUuYR3hdixZtS5WrrluwqxAbxn1QqQejLYDLseDW96GvFN3I4CCHEfxQucp8YDebWA0zfDsI65X1Z+emrKCaG4vopf59Ny006sU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="d94283625678287c70ece30373ea8901d265b691" Description="" Url=""><as:assemblyIdentity name="myip.exe" version="1.0.0.0" publicKeyToken="e0f4699f4a33983b" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=idea-PC-jerry\beibei</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>KZ5ggbu+eF3qnFQCoaPFHVwZ59w=</DigestValue></Reference></SignedInfo><SignatureValue>XmbIlbqJ40DuE9oc1jVoqpOwlTYzp4r/WPM6q/32YVH9N299IdtPG4Z+Azt/NzeVcRCU8XaZM0lEAOaC8A2Dso4/alAwFlagDp5XT+uMTvvIekKKRaNeQRHlR+T8cTCre34jrEbOyDqp4lMK/prSOCiRh3w8Jbslt4l73lcLci0=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>zHhdztJmuBIDiueDZARlR45dEuuVJhsbxlYV2s+jOyyTcjlE8ALFacBBTTmftWNYppiBJUAVyUuYR3hdixZtS5WrrluwqxAbxn1QqQejLYDLseDW96GvFN3I4CCHEfxQucp8YDebWA0zfDsI65X1Z+emrKCaG4vopf59Ny006sU=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQIxwRzTdVm6pJbkQ710MOAjANBgkqhkiG9w0BAQUFADAzMTEwLwYDVQQDHigAaQBkAGUAYQAtAFAAQwAtAGoAZQByAHIAeQBcAGIAZQBpAGIAZQBpMB4XDTEzMTIyMDE0MDczMFoXDTE0MTIyMDIwMDczMFowMzExMC8GA1UEAx4oAGkAZABlAGEALQBQAEMALQBqAGUAcgByAHkAXABiAGUAaQBiAGUAaTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAzHhdztJmuBIDiueDZARlR45dEuuVJhsbxlYV2s+jOyyTcjlE8ALFacBBTTmftWNYppiBJUAVyUuYR3hdixZtS5WrrluwqxAbxn1QqQejLYDLseDW96GvFN3I4CCHEfxQucp8YDebWA0zfDsI65X1Z+emrKCaG4vopf59Ny006sUCAwEAATANBgkqhkiG9w0BAQUFAAOBgQBdlHQCXckBNMzsDsZEarPYo4KQPLO7Y4kNdJSvw/Y5BgTd/g28rMo8NXcNd+YPF0XtOXKoFckM71ONL5oCCJIh70dffVSLNpuYQpCmPjewIkM5GCePQZqX/m2GmykwRnsKFbYE1ClVwBtRZ+cQK47T56GGiwa4dq9Vd7sfvHMgHQ==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
