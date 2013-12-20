@@ -1,5 +1,1 @@
-myip
-
-
-
-====
+This tool is used to show local IP address
